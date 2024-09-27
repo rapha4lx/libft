@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:21:36 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/09/26 16:33:49 by rferro-d         ###   ########.fr       */
+/*   Created: 2024/09/26 18:43:54 by rferro-d          #+#    #+#             */
+/*   Updated: 2024/09/26 18:58:32 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	(void)src;
-	(void)n;
-/*	char *d;
-	size_t	size;
-
-	d = (char*)dest;
-	size = ft_strlen(src);
-	if (size < n)
-		while (size-- < n)
-			d++ = ((char*)src)++;
-	else
-		while (size++ > n)
-			d++ = ((char*)src)++;*/
-	return (dest);
+	while (n > 0)
+	{
+		if (*((unsigned char*)s) == (unsigned char)c)
+			return ((void*)s);
+		n--;
+		s++;
+	}
+	return (NULL);
 }
