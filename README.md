@@ -1,7 +1,7 @@
 # libft
 ## My first C programming library
-### List of functions
-<div style="display: flex;flex-direction: row;">
+### List of functions Part 1
+<div style="display: flex; style="vertical-align: top;">
   <div>
     <ul>
         <li>[x] isalpha</li>
@@ -29,6 +29,21 @@
         <li>[x] memcmp</li>
         <li>[x] strnstr</li>
         <li>[x] atoi</li>
+      </ul>
+  <div>
+<div>
+
+### List of functions Part 2
+
+<div style="display: flex;flex-direction: row;">
+  <div>
+    <ul>
+        <li>[ ] isalpha</li>
+      </ul>
+  </div> 
+  <div>
+      <ul>
+        <li>[ ] strlcat</li>
       </ul>
   <div>
 <div>
