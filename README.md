@@ -38,12 +38,45 @@
 <div style="display: flex;flex-direction: row;">
   <div>
     <ul>
-        <li>[ ] isalpha</li>
+        <li>[ ] ft_substr</li>
+        <li>[ ] ft_strtrim</li>
+        <li>[ ] ft_strmapi</li>
+        <li>[ ] ft_putchar_fd</li>
+        <li>[ ] ft_putendl_fd</li>
       </ul>
   </div> 
   <div>
       <ul>
-        <li>[ ] strlcat</li>
+        <li>[ ] ft_strjoin</li>
+        <li>[ ] ft_split</li>
+        <li>[ ] ft_itoa</li>
+        <li>[ ] ft_striteri</li>
+        <li>[ ] ft_putstr_fd</li>
+        <li>[ ] ft_putnbr_fd</li>
       </ul>
   <div>
 <div>
+
+### List of Extra functions
+
+<div style="display: flex;flex-direction: row;">
+  <div>
+    <ul>
+        <li>[ ] ft_lstnew</li>
+        <li>[ ] ft_lstsize</li>
+        <li>[ ] ft_lstadd_back</li>
+        <li>[ ] ft_lstclear</li>
+        <li>[ ] ft_lstiter</li>
+      </ul>
+  </div> 
+  <div>
+      <ul>
+        <li>[ ] ft_lstadd_front</li>
+        <li>[ ] ft_lstlast</li>
+        <li>[ ] ft_lstdelone</li>
+        <li>[ ] ft_striteri</li>
+        <li>[ ] ft_lstmap</li>
+      </ul>
+  <div>
+<div>
+
