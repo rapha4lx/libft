@@ -12,8 +12,8 @@
         <li>[x] strlen</li>
         <li>[x] memset</li>
         <li>[x] bzero</li>
-        <li>[ ] memcpy</li>
-        <li>[ ] memmove</li>
+        <li>[x] memcpy</li>
+        <li>[x] memmove</li>
         <li>[x] strlcpy</li>
       </ul>
   </div> 
