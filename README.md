@@ -39,7 +39,7 @@
   <div>
     <ul>
         <li>[x] ft_substr</li>
-        <li>[ ] ft_strtrim</li>
+        <li>[x] ft_strtrim</li>
         <li>[ ] ft_strmapi</li>
         <li>[ ] ft_putchar_fd</li>
         <li>[ ] ft_putendl_fd</li>
