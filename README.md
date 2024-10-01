@@ -38,7 +38,7 @@
 <div style="display: flex;flex-direction: row;">
   <div>
     <ul>
-        <li>[ ] ft_substr</li>
+        <li>[x] ft_substr</li>
         <li>[ ] ft_strtrim</li>
         <li>[ ] ft_strmapi</li>
         <li>[ ] ft_putchar_fd</li>
@@ -47,7 +47,7 @@
   </div> 
   <div>
       <ul>
-        <li>[ ] ft_strjoin</li>
+        <li>[x] ft_strjoin</li>
         <li>[ ] ft_split</li>
         <li>[ ] ft_itoa</li>
         <li>[ ] ft_striteri</li>
