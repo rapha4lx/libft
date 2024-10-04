@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 18:17:55 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/09/25 14:27:17 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/02 19:51:13 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(char *str)
 	size_t	size;
 
 	size = 0;
-	while (str[size])
+	while (*str++)
 		size++;
 	return (size);
 }

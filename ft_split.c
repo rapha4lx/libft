@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:22:05 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/02 20:15:59 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:54:10 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,17 +63,16 @@ char	**ft_split(char const *s1, char c)
 	end = 0;
 	while (*s1)
 	{
-		start = get_split_start(s1 + start, c);
-		if (start == 0)
-			break;
+		start = get_split_start(s1, c);
 		end = get_split_end(s1 + start, c);
 		if (start == 0 && end == 0)
 			break;
 		*buff = ft_substr(s1, start, end);
 		buff++;
 		start = start + end;
+		s1 += start;
 		end = 0;
 	}
 	*buff = NULL;
-	return (buff - sz);
+	return (buff -= sz - 1);
 }

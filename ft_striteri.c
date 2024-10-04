@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 16:26:06 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/03 20:16:02 by rferro-d         ###   ########.fr       */
+/*   Created: 2024/10/03 18:57:56 by rferro-d          #+#    #+#             */
+/*   Updated: 2024/10/03 19:09:52 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	if (c >= 65 && c <= 90)
-		return (97 + (c - 65));
-	return (c);
+	size_t	sz;
+
+	sz = ft_strlen(s);
+	while (sz)
+	{
+		(*f)(sz, &s[sz]);
+		sz--;
+	}
 }
