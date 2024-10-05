@@ -24,11 +24,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	size_t	sz;
 	
 	start = 0;
 	end = ft_strlen((char*)s1) - 1;
-	sz = end;
 	if (!is_set(s1[start], set) && !is_set(s1[end], set))
 		return (ft_strdup(s1));
 	while (is_set(s1[start], set))

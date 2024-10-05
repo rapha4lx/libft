@@ -14,19 +14,9 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	sz;
-	char	*d;
-	char	*s;
-	size_t	srcz;
+	n--;
+	(void)dest;
+	(void)src;
 
-	sz = 0;
-	d = (char*)dest;
-	s = (char*)src;
-	srcz = ft_strlen((char*)src);
-	while (sz < n && s[sz] && srcz > sz)
-	{
-		d[sz] = s[sz];
-		sz++;
-	}
 	return (dest);
 }
