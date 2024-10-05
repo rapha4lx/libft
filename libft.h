@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 15:44:00 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/03 19:01:35 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/05 14:42:18 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,5 @@ t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int	ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
-
+void	ft_lstadd_back(t_list **lst, t_list *new);
 # endif
