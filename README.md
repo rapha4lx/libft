@@ -13,7 +13,7 @@
         <li>[x] memset</li>
         <li>[x] bzero</li>
         <li>[x] memcpy</li>
-        <li>[x] memmove</li>
+        <li>[ ] memmove</li>
         <li>[x] strlcpy</li>
       </ul>
   </div> 
@@ -27,7 +27,7 @@
         <li>[x] strncmp</li>
         <li>[x] memchr</li>
         <li>[x] memcmp</li>
-        <li>[x] strnstr</li>
+        <li>[ ] strnstr</li>
         <li>[x] atoi</li>
       </ul>
   <div>
@@ -39,20 +39,20 @@
   <div>
     <ul>
         <li>[x] ft_substr</li>
-        <li>[x] ft_strtrim</li>
+        <li>[ ] ft_strtrim</li>
         <li>[ ] ft_strmapi</li>
-        <li>[ ] ft_putchar_fd</li>
-        <li>[ ] ft_putendl_fd</li>
+        <li>[x] ft_putchar_fd</li>
+        <li>[x] ft_putendl_fd</li>
       </ul>
   </div> 
   <div>
       <ul>
         <li>[x] ft_strjoin</li>
-        <li>[ ] ft_split</li>
-        <li>[ ] ft_itoa</li>
+        <li>[x] ft_split</li>
+        <li>[x] ft_itoa</li>
         <li>[ ] ft_striteri</li>
-        <li>[ ] ft_putstr_fd</li>
-        <li>[ ] ft_putnbr_fd</li>
+        <li>[x] ft_putstr_fd</li>
+        <li>[x] ft_putnbr_fd</li>
       </ul>
   <div>
 <div>
@@ -62,8 +62,8 @@
 <div style="display: flex;flex-direction: row;">
   <div>
     <ul>
-        <li>[ ] ft_lstnew</li>
-        <li>[ ] ft_lstsize</li>
+        <li>[x] ft_lstnew</li>
+        <li>[x] ft_lstsize</li>
         <li>[ ] ft_lstadd_back</li>
         <li>[ ] ft_lstclear</li>
         <li>[ ] ft_lstiter</li>
@@ -71,8 +71,8 @@
   </div> 
   <div>
       <ul>
-        <li>[ ] ft_lstadd_front</li>
-        <li>[ ] ft_lstlast</li>
+        <li>[x] ft_lstadd_front</li>
+        <li>[x] ft_lstlast</li>
         <li>[ ] ft_lstdelone</li>
         <li>[ ] ft_striteri</li>
         <li>[ ] ft_lstmap</li>
