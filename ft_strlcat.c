@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:59:47 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/09/30 14:28:57 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/08 18:20:43 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	j = ft_strlen(dst);
 	k = 0;
-	sz_src = ft_strlen((char*)src);
+	sz_src = ft_strlen((char *)src);
+	if (j > size)
+		return (sz_src + size);
 	if (size == 0)
 		return (sz_src);
-	while (src[k] && j + k + 1 < size)
+	while (src[k] && (j + k + 1) < size)
 	{
 		dst[j + k] = src[k];
 		k++;
 	}
 	dst[j + k] = '\0';
-	if (size < sz_src)
-		return (sz_src + size);
 	return (j + sz_src);
 }

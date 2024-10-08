@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 17:06:33 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/03 18:57:40 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/08 13:44:19 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*buff;
 	size_t	sz;
 
-	sz = ft_strlen((char*)s);
-	buff = (char*)ft_calloc(sizeof(char), (sz + 1));
+	sz = ft_strlen((char *)s);
+	buff = (char *)ft_calloc(sizeof(char), (sz + 1));
 	if (buff == NULL)
 		return (NULL);
 	while (sz-- > 0)
