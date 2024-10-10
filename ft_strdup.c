@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:15:05 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/08 19:28:21 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/09 11:54:28 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 char	*ft_strdup(const char *s)
 {
 	size_t	sz;
-	char	*ss;
+	char	*str;
 
 	sz = ft_strlen((char *)s);
-	ss = (char *)malloc(sizeof(char) * (sz + 1));
-	if (ss == NULL)
+	str = (char *)malloc(sizeof(char) * (sz + 1));
+	if (str == NULL)
 		return (NULL);
 	while (*s)
-		*ss++ = *s++;
-	return (ss -= sz);
+		*str++ = *s++;
+	*str = '\0';
+	return (str - sz);
 }

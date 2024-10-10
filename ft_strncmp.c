@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 18:19:20 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/08 18:21:53 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:09:36 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		s1++;
 		s2++;
 	}
-	return (*(char *)s1 - *(char *)s2);
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }

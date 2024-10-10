@@ -6,73 +6,77 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:22:05 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/08 13:46:54 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/10 19:18:24 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	get_split_count(char const *s1, char c)
+static	size_t	get_next_c(char const *s1, char c)
 {
-	size_t	j;
-
-	j = 0;
-	while (*s1++)
-		if (*(char *)s1 == c
-			&& *(s1 + 1) != '\0' && *(s1 + 1) != c)
-			j++;
-	return (j + 2);
-}
-
-static size_t	get_split_start(char const *s1, char c)
-{
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (*s1 && *s1 == c)
-	{
-		s1++;
+	while (s1[i] && s1[i] != c)
 		i++;
-	}
 	return (i);
 }
 
-static size_t	get_split_end(char const *s1, char c)
+size_t	start_buff(char ***buff, char const *s1, char c)
 {
 	size_t	i;
+	size_t	k;
 
 	i = 0;
-	while (*s1 && *s1 != c)
+	k = 0;
+	while (s1[i])
 	{
-		s1++;
-		i++;
+		while (s1[i] && s1[i] != c)
+			i++;
+		while (s1[i] && s1[i] == c)
+			i++;
+		k++;
 	}
-	return (i);
+	*buff = (char **)malloc(sizeof(char *) * (k + 1));
+	return (k);
 }
 
 char	**ft_split(char const *s1, char c)
 {
 	char	**buff;
-	size_t	sz;
-	size_t	start;
-	size_t	end;
+	size_t	buff_sz;
+	size_t	i;
+	size_t	j;
+	size_t	it;
 
-	sz = get_split_count(s1, c);
-	buff = (char **)malloc(sizeof(char *) * (sz + 1));
-	start = 0;
-	end = 0;
-	while (*s1)
+	i = 0;
+	j = 0;
+	it = 0;
+	if (s1 == NULL)
+		return (NULL);
+	buff_sz = start_buff(&buff, s1, c);
+	if (buff == NULL)
+		return (NULL);
+	while (*s1 && buff_sz > j)
 	{
-		start = get_split_start(s1, c);
-		end = get_split_end(s1 + start, c);
-		if (start == 0 && end == 0)
-			break ;
-		*buff = ft_substr(s1, start, end);
-		buff++;
-		start = start + end;
-		s1 += start;
-		end = 0;
+		i = get_next_c(s1, c);
+		if (i != 0)
+		{
+			buff[j] = (char*)malloc(sizeof(char) * (i + 1));
+			if (buff[j] == NULL)
+			{
+				while (it < j)
+					free(buff[it++]);
+				free(buff);
+				return (NULL);
+			}
+			ft_strlcpy(buff[j], s1, i + 1);
+			j++;
+			s1 += i;
+		}
+		else
+			s1++;
 	}
-	*buff = NULL;
-	return (buff -= sz - 1);
+	buff[j] = NULL;
+	return (buff);
 }

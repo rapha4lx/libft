@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 18:57:56 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/03 19:09:52 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/10 14:55:20 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		(*f)(sz, s + sz);
 		sz++;
 	}
-	printf("%s\n", s);
 }

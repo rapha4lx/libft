@@ -6,7 +6,7 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:15:22 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/08 16:18:32 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:07:06 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_lstsize(t_list *lst)
 
 	if (lst == NULL)
 		return (0);
-	i = 1;
+	i = 0;
 	it = lst;
 	while (it != NULL)
 	{

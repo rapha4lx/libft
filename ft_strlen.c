@@ -6,13 +6,13 @@
 /*   By: rferro-d <rferro-d@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 18:17:55 by rferro-d          #+#    #+#             */
-/*   Updated: 2024/10/02 19:51:13 by rferro-d         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:26:04 by rferro-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	size;
 
